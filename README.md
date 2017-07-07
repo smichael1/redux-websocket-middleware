@@ -1,6 +1,6 @@
 # redux-websocket-middleware
 
-Redux middleware that handles pure websockets
+Redux middleware that enables pure websocket communication.
 
 This middleware is used to send and receive websocket messages over pure websockets using Redux actions and reducers.  
 
