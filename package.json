@@ -1,0 +1,24 @@
+{
+  "name": "redux-websocket-middleware",
+  "version": "0.1.0",
+  "description": "Redux middleware that handles pure websockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smichael1/redux-websocket-middleware.git"
+  },
+  "keywords": [
+    "redux",
+    "middleware",
+    "websockets"
+  ],
+  "author": "Scott Michaels",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smichael1/redux-websocket-middleware/issues"
+  },
+  "homepage": "https://github.com/smichael1/redux-websocket-middleware#readme"
+}
