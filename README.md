@@ -2,8 +2,11 @@
 
 Redux middleware that handles pure websockets
 
+This middleware is used to send and receive websocket messages over pure websockets using Redux actions and reducers.  
 
-Example: creating actions that dispatch to a websocket:
+Once installed as redux middleware and endpoint configured, any action of type: WebsocketActionTypes.SEND will have its payload sent over websockets to the endpoint.
+
+For example, an action creator function to send its data to through the websocket:
 
 ```js
 import {WebsocketActionTypes} from 'redux-websocket-middleware'
@@ -16,8 +19,8 @@ function websocketSendAction(data) {
 }
 ```
 
-Example: listening for data received from the websocket.
-Data received from the websocket will dispatch an action of `WebsocketActionTypes.RECEIVE`. 
+Data received over websockets from the endpoint will dispatch an action of type `WebsocketActionTypes.RECEIVE`. 
+The following is an example reducer that listens for data received from the websocket:
 
 ```js
 import { WebsocketActionTypes } from "redux-websocket-middleware"
@@ -32,7 +35,7 @@ function reducer (state, action) {
 ### installation and endpoint configuration
 
 reduxWebsocketMiddleware is added as middleware in the standard redux pattern.
-The endpoint URL is specified when instantiating the middleware:
+The endpoint URL is specified when creating the middleware:
 
 ```js
 import { applyMiddleware, createStore }
