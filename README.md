@@ -34,7 +34,7 @@ function reducer (state, action) {
 
 ### installation and endpoint configuration
 
-reduxWebsocketMiddleware is added as middleware in the standard redux pattern.
+reduxWebsocketMiddleware is added as middleware following the standard redux pattern.
 The endpoint URL is specified when creating the middleware:
 
 ```js
