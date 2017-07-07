@@ -8,7 +8,7 @@ Example: creating actions that dispatch to a websocket:
 ```js
 import {WebsocketActionTypes} from 'redux-websocket-middleware'
 
-function writeToSocket(data) {
+function websocketSendAction(data) {
   return {
     type: WebsocketActionTypes.SEND,
     payload: data
@@ -17,13 +17,13 @@ function writeToSocket(data) {
 ```
 
 Example: listening for data received from the websocket.
-Data received from the socket will dispatch an action of `WebsocketActionTypes.RECEIVE`. 
+Data received from the websocket will dispatch an action of `WebsocketActionTypes.RECEIVE`. 
 
 ```js
 import { WebsocketActionTypes } from "redux-websocket-middleware"
 
 function reducer (state, action) {
-  if (action.type === WebsocketActionTypes.RECEIVED) {
+  if (action.type === WebsocketActionTypes.RECEIVE) {
     // ...
   }
 }
