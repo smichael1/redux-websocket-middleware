@@ -1,9 +1,7 @@
 # redux-websocket-middleware
-==========================
+
 Redux middleware that handles pure websockets
 
-
-[![build status](https://travis-ci.org/sch/redux-websocket-middleware.svg?branch=master)](https://travis-ci.org/sch/redux-websocket-middleware)
 
 Example: creating actions that dispatch to a websocket:
 
